@@ -56,11 +56,11 @@ var vm = new Vue({
                 }
                 processedProfiles.push(profileDBStructure);
             }
-            // axios.post('http://localhost:3000/profiles', processedProfiles[0])
-            // .then(function(){
-            //     vm.storedProfiles = processedProfiles;
-            //     vm.displayedProfiles = vm.storedProfiles;
-            // })
+            axios.post('http://localhost:3000/profiles', processedProfiles[0])
+            .then(function(){
+                vm.storedProfiles = processedProfiles;
+                vm.displayedProfiles = vm.storedProfiles;
+            })
             vm.storedProfiles = processedProfiles;
             vm.displayedProfiles = vm.storedProfiles;
         }
