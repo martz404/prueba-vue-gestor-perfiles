@@ -1,8 +1,3 @@
-
-document.addEventListener('keyup', function(e){
-    if(e.keyCode === 13) document.querySelector('.submitButton').click();
-})
-
 var vm = new Vue({
     el: '#vueTestApp',
     data () { 
@@ -71,6 +66,9 @@ var vm = new Vue({
             .then((request) => {
                 this.saveProfilesToDB(request.data.results);
             }
-        )
+        ),        
+        document.addEventListener('keyup', function(e){
+            if(e.keyCode === 13) document.querySelector('.submitButton').click();
+        })
     },
 })
