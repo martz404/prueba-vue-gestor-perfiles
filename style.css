@@ -1,0 +1,35 @@
+:root {
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    font-family: 'Lato', sans-serif;
+}
+
+.profile{
+    background-color: white;
+    padding: 2em;
+    border-radius: 5px;
+    margin: 1em;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.profile__image{float:left;}
+
+.profile__data__container{width: 100%; clear: both;}
+
+.header{
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.submitButton{
+    padding: .5em 1em;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    margin-left: 1em;
+}
